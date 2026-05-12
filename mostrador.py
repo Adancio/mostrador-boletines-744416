@@ -5,7 +5,7 @@ from botocore.exceptions import BotoCoreError, ClientError
 
 expediente = "744416"
 
-app = FastAPI()
+app = FastAPI(title="Practica 5 - Presrntacion")
 
 dynamodb = boto3.resource("dynamodb", region_name="us-east-1")
 TABLE_NAME = "boletines"
